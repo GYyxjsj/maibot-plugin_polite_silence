@@ -1,0 +1,13 @@
+[plugin]
+enabled = true
+enable_log = true
+config_version = "1.1.0"
+
+[silence]
+# 单次拒答时长上下限（分钟）
+min_ignore_minutes = 10
+max_ignore_minutes = 1440
+# 不会被拒答的 QQ 号
+whitelist_users = []
+# true: 拒答在所有会话生效；false: 仅在触发拒答的聊天流生效
+is_global_ignore = true
