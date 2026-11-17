@@ -1,18 +1,19 @@
 {
   "manifest_version": 2,
-  "id": "kitsuneimomo.polite-silence",
+  "id": "github.gyyxjsj.polite-silence",
   "name": "礼貌性沉默",
   "version": "1.1.0",
   "description": "让 AI 通过 ignore_qq_user 工具主动沉默骚扰者：插件在设定时长内忽略指定 QQ 用户的消息，支持全局或单聊天流作用域、白名单与本地持久化。",
   "author": {
-    "name": "kitsuneimomo",
-    "url": "https://github.com/KitsuneiMomo"
+    "name": "GYyxjsj",
+    "url": "https://github.com/GYyxjsj"
   },
-  "license": "UNLICENSED",
+  "license": "MIT",
   "urls": {
-    "repository": "https://github.com/KitsuneiMomo/astrbot_plugin_polite_silence",
-    "homepage": "https://github.com/KitsuneiMomo/astrbot_plugin_polite_silence",
-    "issues": "https://github.com/KitsuneiMomo/astrbot_plugin_polite_silence/issues"
+    "repository": "https://github.com/GYyxjsj/maibot-plugin_polite_silence",
+    "homepage": "https://github.com/GYyxjsj/maibot-plugin_polite_silence",
+    "documentation": "https://github.com/GYyxjsj/maibot-plugin_polite_silence/blob/main/README.md",
+    "issues": "https://github.com/GYyxjsj/maibot-plugin_polite_silence/issues"
   },
   "changelog": "CHANGELOG.md",
   "host_application": {
@@ -24,7 +25,7 @@
     "max_version": "2.99.99"
   },
   "dependencies": [],
-  "plugin_type": "extension",
+  "plugin_type": "management",
   "capabilities": [
     "send.text"
   ],

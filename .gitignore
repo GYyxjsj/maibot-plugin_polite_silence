@@ -23,3 +23,6 @@ temp/
 
 # 本地配置备份
 config_back/
+
+# 运行配置（含个人设置）
+config.toml

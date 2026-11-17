@@ -83,13 +83,13 @@ permission = ["qq:你的QQ号"]
 
 ## 注意事项
 
-- 拒答名单持久化在插件数据目录 `data/plugins/kitsuneimomo.polite-silence/bans.json`（由 `ctx.paths.data_dir` 分配）。启动时自动恢复未过期记录并丢弃过期记录；文件损坏时记录警告并以空名单启动。
+- 拒答名单持久化在插件数据目录 `data/plugins/github.gyyxjsj.polite-silence/bans.json`（由 `ctx.paths.data_dir` 分配）。启动时自动恢复未过期记录并丢弃过期记录；文件损坏时记录警告并以空名单启动。
 - 拒答作用域在写入时确定，之后修改 `is_global_ignore` 不会迁移已有记录；如需要改变作用域，请用 `/unignore` 解除后重新拒答。
 - 被拒答用户的消息在入站阶段即被中止，因此不会出现在聊天记录里，模型也不会“看到”这些消息。
 - 白名单只阻止新的拒答；修改白名单不会自动解除已经存在的记录，可用 `/unignore` 处理。
 - **误判风险**：拒答决定来自模型调用，用户仍可能通过话术诱导模型误伤他人。建议把管理员和关键用户加入 `whitelist_users`，并适当调低 `max_ignore_minutes`。
 - 多个实例共用同一插件数据目录时不会实时同步名单，后写入的实例会覆盖文件；请避免多个进程同时修改拒答名单。
-- 上游仓库未声明开源许可证，本移植版在 `_manifest.json` 中标记为 `UNLICENSED`。如需公开分发，请先获得原作者授权。
+- 上游 AstrBot 仓库未声明开源许可证。本仓库是面向 MaiBot 的移植实现，代码按 MIT 许可证发布（见 `LICENSE`），并在 README 顶部保留对上游作者 KitsuneiMomo 的署名；如上游作者有异议，请联系本仓库调整或下线。
 
 ## 开发与测试
 
